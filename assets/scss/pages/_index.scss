@@ -1,3 +1,40 @@
-.index-title {
-  font-size: 100px;
+.banner {
+  @include cover-background('./../assets/images/home-header-sm.png');
+  @include media-breakpoint-up(lg) {
+    background-image: url('./../assets/images/home-header.png');
+  }
+}
+
+.design {
+  @include cover-background('./../assets/images/index-bg-sm.png', 50% 0);
+  @include media-breakpoint-up(md) {
+    background-image: url('./../assets/images/index-bg-md.png');
+    background-position: 50% 20%;
+  }
+  @include media-breakpoint-up(lg) {
+    background-image: url('./../assets/images/index-bg.png');
+    background-position: 50% 50%;
+  }
+  &-pic {
+    height: 240px;
+    @include cover-background();
+    &-1 {
+      background-image: url('./../assets/images/home-section4-1-sm.png');
+      @include media-breakpoint-up(md) {
+        background-image: url('./../assets/images/home-section4-1.png');
+      }
+    }
+    &-2 {
+      background-image: url('./../assets/images/home-section4-2-sm.png');
+      @include media-breakpoint-up(md) {
+        background-image: url('./../assets/images/home-section4-2.png');
+      }
+    }
+  }
+}
+
+.recommandation {
+  .card-body {
+    height: 205px;
+  }
 }

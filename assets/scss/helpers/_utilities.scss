@@ -1,0 +1,28 @@
+.w-24px {
+  width: 24px !important;
+}
+.w-100px {
+  width: 100px !important;
+}
+.w-md-40px {
+  @include media-breakpoint-up(md) {
+    width: 40px !important;
+  }
+}
+.w-lg-48px {
+  @include media-breakpoint-up(lg) {
+    width: 48px !important;
+  }
+}
+
+.top-24px {
+  top: 24px !important;
+}
+
+.bg-pink {
+  background-color: #FBF2F2 !important;
+}
+
+.shadow {
+  box-shadow: 0 2px 6px #00000029 !important;
+}

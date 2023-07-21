@@ -1,0 +1,27 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "position": (
+      property: position,
+      responsive: true,
+      values: static relative absolute fixed sticky
+    ),
+    "font-size": (
+      rfs: true,
+      property: font-size,
+      class: fs,
+      responsive: true,
+      values: $font-sizes
+    ),
+    "font-weight": (
+      property: font-weight,
+      class: fw,
+      values: (
+        normal: $font-weight-normal,
+        medium: $font-weight-medium,
+        bold: $font-weight-bold,
+        black: $font-weight-black
+      )
+    ),
+  )
+);
