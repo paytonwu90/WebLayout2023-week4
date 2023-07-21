@@ -1,33 +1,35 @@
 .banner {
-  @include cover-background('./../assets/images/home-header-sm.png');
+  //用 './../assets/images/home-header-sm.png' 在 dev 可以，但 deploy 上 GitHub 之後圖片會跑不出來
+  //要用 '/assets/images/home-header-sm.png' 或 '../../assets/images/home-header-sm.png'
+  @include cover-background('/assets/images/home-header-sm.png');
   @include media-breakpoint-up(lg) {
-    background-image: url('./../assets/images/home-header.png');
+    background-image: url('/assets/images/home-header.png');
   }
 }
 
 .design {
-  @include cover-background('./../assets/images/index-bg-sm.png', 50% 0);
+  @include cover-background('/assets/images/index-bg-sm.png', 50% 0);
   @include media-breakpoint-up(md) {
-    background-image: url('./../assets/images/index-bg-md.png');
+    background-image: url('/assets/images/index-bg-md.png');
     background-position: 50% 20%;
   }
   @include media-breakpoint-up(lg) {
-    background-image: url('./../assets/images/index-bg.png');
+    background-image: url('/assets/images/index-bg.png');
     background-position: 50% 50%;
   }
   &-pic {
     height: 240px;
     @include cover-background();
     &-1 {
-      background-image: url('./../assets/images/home-section4-1-sm.png');
+      background-image: url('/assets/images/home-section4-1-sm.png');
       @include media-breakpoint-up(md) {
-        background-image: url('./../assets/images/home-section4-1.png');
+        background-image: url('/assets/images/home-section4-1.png');
       }
     }
     &-2 {
-      background-image: url('./../assets/images/home-section4-2-sm.png');
+      background-image: url('/assets/images/home-section4-2-sm.png');
       @include media-breakpoint-up(md) {
-        background-image: url('./../assets/images/home-section4-2.png');
+        background-image: url('/assets/images/home-section4-2.png');
       }
     }
   }
