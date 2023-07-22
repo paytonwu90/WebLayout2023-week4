@@ -35,6 +35,9 @@ export default defineConfig({
     // 啟動 server 時預設開啟的頁面
     open: 'pages/index.html',
   },
+  preview: {
+    open: '/WebLayout2023-week4/index.html',
+  },
   build: {
     rollupOptions: {
       input: Object.fromEntries(

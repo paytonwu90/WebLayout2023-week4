@@ -1,0 +1,17 @@
+.link-white {
+  $link-color: #fff;
+  color: $link-color;
+  transition: color .15s ease;
+  &:hover {
+    color: shift-color($link-color, $link-shade-percentage);
+  }
+}
+
+.link-black {
+  $link-color: #000;
+  color: $link-color;
+  transition: color .15s ease;
+  &:hover {
+    color: shift-color($link-color, -$link-shade-percentage*2);
+  }
+}
