@@ -1,0 +1,43 @@
+.glasses-banner-item {
+  padding-top: 36%;
+  @include media-breakpoint-up(md) {
+    padding-top: 15%;
+  }
+  &-1 {
+    @include cover-background('/assets/images/product-header-sm-1.png');
+    @include media-breakpoint-up(lg) {
+      background-image: url('/assets/images/product-header-1.png');
+    }
+  }
+  &-2 {
+    @include cover-background('/assets/images/product-header-sm-2.png');
+    @include media-breakpoint-up(lg) {
+      background-image: url('/assets/images/product-header-2.png');
+    }
+  }
+  &-3 {
+    @include cover-background('/assets/images/product-header-sm-3.png');
+    @include media-breakpoint-up(lg) {
+      background-image: url('/assets/images/product-header-3.png');
+    }
+  }
+  &-4 {
+    @include cover-background('/assets/images/product-header-sm-4.png');
+    @include media-breakpoint-up(lg) {
+      background-image: url('/assets/images/product-header-4.png');
+    }
+  }
+}
+
+.color-selector {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  &-1 {
+    background-color: #5F3E2D;
+  }
+  &-2 {
+    background-color: #B75929;
+  }
+}

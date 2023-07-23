@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太陽眼鏡 | 眼鏡官網</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <nav class="container-lg p-0">
+      <ul class="nav fs-md-7 fs-lg-6 fw-medium">
+        <li class="nav-item flex-grow-1">
+          <a class="nav-link link-hover-underline text-black text-center border px-0 py-4 py-lg-6" href="optical-glasses.html">OPTICAL</a>
+        </li>
+        <li class="nav-item flex-grow-1">
+          <span class="nav-link active link-hover-underline text-black text-center border px-0 py-4 py-lg-6" aria-current="page">SUNGLASSES</span>
+        </li>
+        <li class="nav-item flex-grow-1">
+          <a class="nav-link link-hover-underline text-black text-center border px-0 py-4 py-lg-6" href="#">FUNCTIONAL</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="glasses-banner d-flex">
+      <div class="glasses-banner-item glasses-banner-item-3 w-50"></div>
+      <div class="glasses-banner-item glasses-banner-item-4 w-50"></div>
+    </div>
+    
+    <div class="container pt-10 pt-md-15 pb-14 pb-md-15">
+      <!-- Title -->
+      <h2 class="fs-7 fs-md-3 fw-medium text-center">2020 NEW COLLECTION</h2>
+      <h2 class="fs-7 fs-md-6 fw-normal text-center mb-6 mb-md-8">賽璐珞鈦金屬混合鏡框</h2>
+
+      <!-- Products -->
+      <div class="row pb-10 pb-lg-0">
+        <div class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
+          <%- include('./pages/product', {img: 'product-7'}); -%>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
+          <%- include('./pages/product', {img: 'product-8'}); -%>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
+          <%- include('./pages/product', {img: 'product-9'}); -%>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
+          <%- include('./pages/product', {img: 'product-10'}); -%>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
+          <%- include('./pages/product', {img: 'product-11'}); -%>
+        </div>
+        <div class="col-md-6 col-lg-4 d-none d-md-block mb-6 mb-md-10 mb-lg-15">
+          <%- include('./pages/product', {img: 'product-12'}); -%>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <%- include('./pages/pagination'); -%>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
