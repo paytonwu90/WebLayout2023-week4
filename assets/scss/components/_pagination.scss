@@ -1,0 +1,50 @@
+.pagination {
+  display: flex;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 12px 16px;
+  //@include font-size(14px);
+  font-size: 16px;
+  color: $dark;
+  background-color: #fff;
+  border: 1px solid $dark;
+  @include transition($pagination-transition);
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
+
+  &:hover {
+    background-color: shift-color(#fff, 5%);
+  }
+
+  &:focus {
+    z-index: 3;
+    background-color: shift-color(#fff, 10%);
+  }
+
+  &.active,
+  .active > & {
+    z-index: 3;
+    color: #fff;
+    background-color: #000;
+  }
+
+  &-next {
+    background-color: #F2F2F2;
+    &:hover {
+      background-color: shift-color(#F2F2F2, 5%);
+    }
+  }
+  &-next, &-prev {
+    padding: 12px 12px;
+  }
+}
+
+.page-item {
+  &:not(:first-child) .page-link {
+    margin-left: -1px;
+  }
+}
