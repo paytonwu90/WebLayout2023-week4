@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>太陽眼鏡 | 眼鏡官網</title>
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <%- include('./layout/stylesheets'); -%>
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -24,10 +24,10 @@
       </ul>
     </nav>
 
-    <div class="glasses-banner d-flex">
-      <div class="glasses-banner-item glasses-banner-item-3 w-50"></div>
-      <div class="glasses-banner-item glasses-banner-item-4 w-50"></div>
-    </div>
+    <ul class="glasses-banner d-flex">
+      <li class="glasses-banner-item glasses-banner-item-3 w-50"></li>
+      <li class="glasses-banner-item glasses-banner-item-4 w-50"></li>
+    </ul>
     
     <div class="container pt-10 pt-md-15 pb-14 pb-md-15">
       <!-- Title -->
@@ -35,26 +35,26 @@
       <h2 class="fs-7 fs-md-6 fw-normal text-center mb-6 mb-md-8">賽璐珞鈦金屬混合鏡框</h2>
 
       <!-- Products -->
-      <div class="row pb-10 pb-lg-0">
-        <div class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
+      <ul class="row pb-10 pb-lg-0">
+        <li class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
           <%- include('./pages/product', {img: 'product-7'}); -%>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
+        </li>
+        <li class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
           <%- include('./pages/product', {img: 'product-8'}); -%>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
+        </li>
+        <li class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
           <%- include('./pages/product', {img: 'product-9'}); -%>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
+        </li>
+        <li class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
           <%- include('./pages/product', {img: 'product-10'}); -%>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
+        </li>
+        <li class="col-md-6 col-lg-4 mb-6 mb-md-10 mb-lg-15">
           <%- include('./pages/product', {img: 'product-11'}); -%>
-        </div>
-        <div class="col-md-6 col-lg-4 d-none d-md-block mb-6 mb-md-10 mb-lg-15">
+        </li>
+        <li class="col-md-6 col-lg-4 d-none d-md-block mb-6 mb-md-10 mb-lg-15">
           <%- include('./pages/product', {img: 'product-12'}); -%>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <!-- Pagination -->
       <%- include('./pages/pagination'); -%>

@@ -1,5 +1,6 @@
 .pagination {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .page-link {
@@ -7,11 +8,14 @@
   display: block;
   padding: 12px 16px;
   //@include font-size(14px);
-  font-size: 16px;
+  font-size: 14px;
   color: $dark;
   background-color: #fff;
   border: 1px solid $dark;
   @include transition($pagination-transition);
+  @include media-breakpoint-up(sm) {
+    font-size: 16px;
+  }
   @include media-breakpoint-up(md) {
     font-size: 18px;
   }
