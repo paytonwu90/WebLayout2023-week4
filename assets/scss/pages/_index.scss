@@ -2,6 +2,7 @@
   //用 './../assets/images/home-header-sm.png' 在 dev 可以，但 deploy 上 GitHub 之後圖片會跑不出來
   //要用 '/assets/images/home-header-sm.png' 或 '../../assets/images/home-header-sm.png'
   @include cover-background('/assets/images/home-header-sm.png');
+  background-attachment: fixed;
   @include media-breakpoint-up(lg) {
     background-image: url('/assets/images/home-header.png');
   }
